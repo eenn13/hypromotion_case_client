@@ -166,8 +166,8 @@ export default function Home() {
           </div>
 
           <div className="bg-gray-100 p-4 rounded">
-            <h2 className="text-xl font-semibold mb-2">Result:</h2>
-            <pre className="whitespace-pre-wrap">{result}</pre>
+            <h2 className="text-xl text-black font-semibold mb-2">Result:</h2>
+            <pre className=" text-black whitespace-pre-wrap">{result}</pre>
           </div>
         </div>
       </main>
