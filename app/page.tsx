@@ -23,6 +23,7 @@ export default function Home() {
   const [result, setResult] = useState<string>("");
 
   const sendRandomCountryRequest = async () => {
+    //Send a request to the backend with a random country code
     try {
       const randomCountry =
         countryCodes[Math.floor(Math.random() * countryCodes.length)];
@@ -43,6 +44,7 @@ export default function Home() {
   };
 
   const getAllStatistics = async () => {
+    //Send a request to the backend to get all statistics
     try {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_BACKEND_URL}/statistics`
@@ -55,6 +57,7 @@ export default function Home() {
   };
 
   const sendBulkRandomCountryRequests = async () => {
+    //Send a bulk request to the backend with random country codes
     setLoading(true);
     setResult("Starting bulk requests...");
 
@@ -94,6 +97,7 @@ export default function Home() {
   };
 
   const sendBulkGetAllRequests = async () => {
+    //Send a bulk request to the backend to get all statistics
     setLoading(true);
     setResult("Starting bulk getAll requests...");
 
