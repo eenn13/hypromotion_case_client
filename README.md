@@ -1,5 +1,11 @@
 ## Getting Started
 
+# Installing packages:
+
+```bash
+npm install
+```
+
 First, run the development server:
 
 ```bash
