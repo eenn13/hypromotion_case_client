@@ -6,7 +6,10 @@
 npm install
 ```
 
-First, run the development server:
+# Create an .env file and add backend url
+NEXT_PUBLIC_BACKEND_URL=http://localhost:3001
+
+Run the application:
 
 ```bash
 npm run dev
